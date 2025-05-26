@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
+use App\Http\Controllers\MailController;
+    
+Route::get('send-mail', [MailController::class, 'index']);
 
 Route::get('/', function () {
     return view('welcome');
